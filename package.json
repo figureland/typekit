@@ -19,7 +19,8 @@
     "format": "prettier --write src/"
   },
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/*.d.ts"
   ],
   "license": "MIT",
   "devDependencies": {
