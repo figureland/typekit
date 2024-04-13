@@ -1,4 +1,16 @@
 
+## v0.0.9
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.8...v0.0.9)
+
+### 🏡 Chore
+
+- Minor tweak to GH action ([d2e6847](https://github.com/figureland/typekit/commit/d2e6847))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.8
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.7...v0.0.8)
