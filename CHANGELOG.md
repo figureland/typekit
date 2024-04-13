@@ -1,4 +1,16 @@
 
+## v0.0.10
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.9...v0.0.10)
+
+### 🏡 Chore
+
+- Trying new registry settings ([b3230ff](https://github.com/figureland/typekit/commit/b3230ff))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.9
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.8...v0.0.9)
