@@ -33,5 +33,17 @@
     "prettier": "^3.2.5",
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figureland/typekit.git"
+  },
+  "author": "Figure Systems",
+  "bugs": {
+    "url": "https://github.com/figureland/typekit"
+  },
+  "homepage": "https://github.com/figureland/typekit#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
