@@ -1,4 +1,16 @@
 
+## v0.0.11
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.10...v0.0.11)
+
+### 🏡 Chore
+
+- Different approach for npm registry publishing ([c8a53a4](https://github.com/figureland/typekit/commit/c8a53a4))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.10
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.9...v0.0.10)
