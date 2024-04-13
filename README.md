@@ -1,3 +1,5 @@
+A collection of Typescript utilities.
+
 ## Scripts
 
 ### Install
