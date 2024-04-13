@@ -1,4 +1,16 @@
 
+## v0.0.7
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.6...v0.0.7)
+
+### 🏡 Chore
+
+- Updating GH action ([8352711](https://github.com/figureland/typekit/commit/8352711))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.6
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.5...v0.0.6)
