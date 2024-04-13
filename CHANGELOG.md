@@ -1,4 +1,17 @@
 
+## v0.0.8
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.7...v0.0.8)
+
+### 🏡 Chore
+
+- Minor change to GH action ([885cdea](https://github.com/figureland/typekit/commit/885cdea))
+- Update readme to test workflow ([597acb6](https://github.com/figureland/typekit/commit/597acb6))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.7
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.6...v0.0.7)
