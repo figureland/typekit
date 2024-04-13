@@ -43,8 +43,5 @@
   "bugs": {
     "url": "https://github.com/figureland/typekit"
   },
-  "homepage": "https://github.com/figureland/typekit#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "homepage": "https://github.com/figureland/typekit#readme"
 }
