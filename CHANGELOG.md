@@ -1,4 +1,16 @@
 
+## v0.0.12
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.11...v0.0.12)
+
+### 🚀 Enhancements
+
+- Change type to module ([45b56a7](https://github.com/figureland/typekit/commit/45b56a7))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.11
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.10...v0.0.11)
