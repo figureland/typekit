@@ -27,7 +27,15 @@ jobs:
       - name: Build the package
         run: bun run build
 
-      - name: Publish to npm
+      - name: Publish to GitHub Packages
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure npm for npmjs.com
+        run: npm config set registry https://registry.npmjs.org/
+
+      - name: Publish to npmjs.com
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_FIGURELAND_ORG_GH_ACTION_TOKEN }}
