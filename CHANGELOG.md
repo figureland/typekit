@@ -1,6 +1,19 @@
 
 ## v0.0.4
 
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.4...v0.0.4)
+
+### 🏡 Chore
+
+- Updating npmrc settings ([dbba8d8](https://github.com/figureland/typekit/commit/dbba8d8))
+- Adding NPM package publish to release action ([6f1b555](https://github.com/figureland/typekit/commit/6f1b555))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
+## v0.0.4
+
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.3...v0.0.4)
 
 ### 🏡 Chore
