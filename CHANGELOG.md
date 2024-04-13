@@ -1,4 +1,16 @@
 
+## v0.0.6
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.5...v0.0.6)
+
+### 🏡 Chore
+
+- Fixing error-prone GH action ([3e44a13](https://github.com/figureland/typekit/commit/3e44a13))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.5
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.4...v0.0.5)
