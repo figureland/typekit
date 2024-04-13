@@ -1,6 +1,6 @@
 {
   "name": "@figureland/typekit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -16,7 +16,8 @@
     "prepublishOnly": "bun run build",
     "prepare": "husky",
     "lint": "eslint src/",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "release": "bunx changelogen@latest --release"
   },
   "files": [
     "dist/*.js",

@@ -1,4 +1,16 @@
 
+## v0.0.3
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.2...v0.0.3)
+
+### 🏡 Chore
+
+- Updating github actions ([10f9b8e](https://github.com/figureland/typekit/commit/10f9b8e))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.2
 
 
