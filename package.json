@@ -13,7 +13,7 @@
   },
   "description": "A tiny personal toolbox for Typescript",
   "scripts": {
-    "build": "bun run build.ts",
+    "build": "bun run scripts/build.ts",
     "prepublishOnly": "bun run build",
     "prepare": "husky",
     "lint": "eslint src/",
