@@ -1,4 +1,16 @@
 
+## v0.0.13
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.12...v0.0.13)
+
+### 🏡 Chore
+
+- Update scripts folder ([87316e9](https://github.com/figureland/typekit/commit/87316e9))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.12
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.11...v0.0.12)
