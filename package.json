@@ -9,6 +9,41 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.js",
       "import": "./dist/index.js"
+    },
+    "./device": {
+      "types": "./dist/device.d.ts",
+      "require": "./dist/device.js",
+      "import": "./dist/device.js"
+    },
+    "./guards": {
+      "types": "./dist/guards.d.ts",
+      "require": "./dist/guards.js",
+      "import": "./dist/guards.js"
+    },
+    "./map": {
+      "types": "./dist/map.d.ts",
+      "require": "./dist/map.js",
+      "import": "./dist/map.js"
+    },
+    "./merge": {
+      "types": "./dist/merge.d.ts",
+      "require": "./dist/merge.js",
+      "import": "./dist/merge.js"
+    },
+    "./object": {
+      "types": "./dist/object.d.ts",
+      "require": "./dist/object.js",
+      "import": "./dist/object.js"
+    },
+    "./promise": {
+      "types": "./dist/promise.d.ts",
+      "require": "./dist/promise.js",
+      "import": "./dist/promise.js"
+    },
+    "./time": {
+      "types": "./dist/time.d.ts",
+      "require": "./dist/time.js",
+      "import": "./dist/time.js"
     }
   },
   "description": "A tiny personal toolbox for Typescript",
