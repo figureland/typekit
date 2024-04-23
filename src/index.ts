@@ -29,10 +29,11 @@ export {
   entries,
   keys,
   values,
-  assign,
+  assignSame,
   is,
   has
 } from './object'
 export { sortMapToArray, NiceMap } from './map'
 export { getTimeSince } from './time'
 export { type Merge, simpleMerge } from './merge'
+export { isFulfilled, promiseSome, pickFulfilled } from './promise'
