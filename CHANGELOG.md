@@ -1,4 +1,16 @@
 
+## v0.0.14
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.13...v0.0.14)
+
+### 🚀 Enhancements
+
+- Added extensive tests and new promise helpers ([b8ad99c](https://github.com/figureland/typekit/commit/b8ad99c))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.13
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.12...v0.0.13)
