@@ -1,4 +1,16 @@
 
+## v0.0.15
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.14...v0.0.15)
+
+### 🚀 Enhancements
+
+- Added entrypoints ([9f287f0](https://github.com/figureland/typekit/commit/9f287f0))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.14
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.13...v0.0.14)
