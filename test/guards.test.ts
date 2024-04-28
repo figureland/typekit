@@ -53,7 +53,7 @@ describe('Primitive Type Checkers', () => {
   it('isObject identifies objects, excluding null', () => {
     expect(isObject({})).toBe(true)
     expect(isObject(null)).toBe(false)
-    expect(isObject([1, 2, 3])).toBe(true)
+    expect(isObject([1, 2, 3])).toBe(false)
   })
 
   it('isSymbol detects symbols', () => {

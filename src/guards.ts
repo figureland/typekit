@@ -3,11 +3,27 @@ export const isBoolean = (n: unknown): n is boolean => typeof n === 'boolean'
 export const isNotNullish = <T = any>(val?: T | null | undefined): val is T =>
   val !== null && val !== undefined
 
+export const isNull = (n: unknown): n is null => n === null
+
+export const isUndefined = (n: unknown): n is undefined => n === undefined
+
 export const isString = (n: unknown): n is string => typeof n === 'string'
 
 export const isNumber = (n: unknown): n is number => !isNaN(n as number) && typeof n === 'number'
 
-export const isObject = (n: unknown): n is object => typeof n === 'object' && n !== null
+export const isObject = (n: unknown): n is object =>
+  !!n && typeof n === 'object' && !isArray(n) && !isDate(n) && !isRegExp(n)
+
+export const isDate = (n: unknown): n is Date => n instanceof Date
+
+export const isRegExp = (n: unknown): n is RegExp => n instanceof RegExp
+
+export const isNullOrUndefined = (n: unknown): n is null | undefined => isNull(n) || isUndefined(n)
+
+export const isPrimitive = (n: unknown): n is string | number | boolean | symbol | bigint =>
+  n === null || (typeof n !== 'object' && typeof n !== 'function')
+
+export const isBigInt = (n: unknown): n is bigint => typeof n === 'bigint'
 
 export const isArray = (n: unknown): n is unknown[] => Array.isArray(n)
 
