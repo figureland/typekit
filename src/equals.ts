@@ -24,10 +24,6 @@ export const shallowEquals: Equals = (obj1, obj2) => {
     return false
   }
 
-  if (keys1[0] !== keys2[0]) {
-    return false
-  }
-
   for (const key of keys1) {
     if (!has(obj2, key) || obj1[key] !== obj2[key]) {
       return false

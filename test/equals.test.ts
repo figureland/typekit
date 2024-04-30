@@ -51,10 +51,10 @@ describe('shallowEquals', () => {
     expect(shallowEquals(obj1, obj2)).toBe(false)
   })
 
-  it('should return false for objects with the same keys in different orders', () => {
+  it('should return true for objects with the same keys in different orders', () => {
     const obj1 = { key1: 'value', key2: 'value' }
     const obj2 = { key2: 'value', key1: 'value' }
-    expect(shallowEquals(obj1, obj2)).toBe(false)
+    expect(shallowEquals(obj1, obj2)).toBe(true)
   })
 
   it('should handle objects with nested structures identically', () => {
