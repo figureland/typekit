@@ -71,3 +71,15 @@ export const isNumberLike = (n: unknown): n is number => {
   if (isString(n)) return !isNaN(parseFloat(n))
   return false
 }
+
+export const isHexColorString = (n: unknown): n is string => {
+  if (!isString(n)) return false
+  return /^#([0-9A-F]{3}){1,2}$/i.test(n)
+}
+
+export const isRGBColorString = (n: unknown): n is string => {
+  if (!isString(n)) return false
+  const rgbRegex = /^rgb\((\s*\d{1,3}\s*,){2}\s*\d{1,3}\s*\)$/
+  const rgbaRegex = /^rgba\((\s*\d{1,3}\s*,){3}\s*(0|1|0?\.\d+)\s*\)$/
+  return rgbRegex.test(n) || rgbaRegex.test(n)
+}

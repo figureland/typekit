@@ -20,7 +20,9 @@ import {
   isAsyncFunction,
   isSet,
   isValidURL,
-  isNumberLike
+  isNumberLike,
+  isHexColorString,
+  isRGBColorString
 } from '../src/guards'
 
 describe('Primitive Type Checkers', () => {
@@ -123,5 +125,23 @@ describe('Specialized Type and Functionality Checkers', () => {
     expect(isNumberLike('123.45')).toBe(true)
     expect(isNumberLike('abc')).toBe(false)
     expect(isNumberLike(NaN)).toBe(false)
+  })
+})
+
+describe('Color String Checkers', () => {
+  it('isHexColorString validates hex color strings', () => {
+    expect(isHexColorString('#ff0000')).toBe(true)
+    expect(isHexColorString('#00ff00')).toBe(true)
+    expect(isHexColorString('#0000ff')).toBe(true)
+    expect(isHexColorString('#000')).toBe(true)
+    expect(isHexColorString('ff0000')).toBe(false)
+  })
+
+  it('isRGBColorString validates RGB and RGBA color strings', () => {
+    expect(isRGBColorString('rgb(255, 0, 0)')).toBe(true)
+    expect(isRGBColorString('rgba(0, 255, 0, 0.5)')).toBe(true)
+    expect(isRGBColorString('rgba(0, 0, 255)')).toBe(false)
+    expect(isRGBColorString('rgb(0, 0, 255')).toBe(false)
+    expect(isRGBColorString('rgb(0, 0, 255, 0.5)')).toBe(false)
   })
 })
