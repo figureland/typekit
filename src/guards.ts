@@ -83,3 +83,10 @@ export const isRGBColorString = (n: unknown): n is string => {
   const rgbaRegex = /^rgba\((\s*\d{1,3}\s*,){3}\s*(0|1|0?\.\d+)\s*\)$/
   return rgbRegex.test(n) || rgbaRegex.test(n)
 }
+
+export const isHSLColorString = (n: unknown): n is string => {
+  if (!isString(n)) return false
+  const hslRegex = /^hsl\(\s*\d{1,3}\s*,\s*\d{1,3}%\s*,\s*\d{1,3}%\s*\)$/
+  const hslaRegex = /^hsla\(\s*\d{1,3}\s*,\s*\d{1,3}%\s*,\s*\d{1,3}%\s*,\s*(0|1|0?\.\d+)\s*\)$/
+  return hslRegex.test(n) || hslaRegex.test(n)
+}

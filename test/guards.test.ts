@@ -22,7 +22,8 @@ import {
   isValidURL,
   isNumberLike,
   isHexColorString,
-  isRGBColorString
+  isRGBColorString,
+  isHSLColorString
 } from '../src/guards'
 
 describe('Primitive Type Checkers', () => {
@@ -143,5 +144,13 @@ describe('Color String Checkers', () => {
     expect(isRGBColorString('rgba(0, 0, 255)')).toBe(false)
     expect(isRGBColorString('rgb(0, 0, 255')).toBe(false)
     expect(isRGBColorString('rgb(0, 0, 255, 0.5)')).toBe(false)
+  })
+
+  it('isHSLColorString validates HSL and HSLA color strings', () => {
+    expect(isHSLColorString('hsl(0, 100%, 50%)')).toBe(true)
+    expect(isHSLColorString('hsla(120, 100%, 50%, 0.5)')).toBe(true)
+    expect(isHSLColorString('hsla(0, 0%, 0%)')).toBe(false)
+    expect(isHSLColorString('hsl(0, 100%, 50%')).toBe(false)
+    expect(isHSLColorString('hsl(0, 100%, 50%, 0.5)')).toBe(false)
   })
 })
