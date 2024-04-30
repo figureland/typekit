@@ -61,8 +61,7 @@
     "release": "bunx changelogen@latest --release"
   },
   "files": [
-    "dist/*.js",
-    "dist/*.d.ts"
+    "dist"
   ],
   "license": "MIT",
   "devDependencies": {
