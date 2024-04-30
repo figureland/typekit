@@ -20,7 +20,17 @@ export {
   isInt32Array,
   isFloat32Array,
   isBigInt64Array,
-  isBigUint64Array
+  isBigUint64Array,
+  isRegExp,
+  isDate,
+  isBigInt,
+  isNullOrUndefined,
+  isPrimitive,
+  isNull,
+  isUndefined,
+  isHexColorString,
+  isRGBColorString,
+  isHSLColorString
 } from './guards'
 export {
   type DistributiveOmit,

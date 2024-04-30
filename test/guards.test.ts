@@ -23,7 +23,9 @@ import {
   isNumberLike,
   isHexColorString,
   isRGBColorString,
-  isHSLColorString
+  isHSLColorString,
+  isLabColorString,
+  isLchColorString
 } from '../src/guards'
 
 describe('Primitive Type Checkers', () => {
@@ -152,5 +154,21 @@ describe('Color String Checkers', () => {
     expect(isHSLColorString('hsla(0, 0%, 0%)')).toBe(false)
     expect(isHSLColorString('hsl(0, 100%, 50%')).toBe(false)
     expect(isHSLColorString('hsl(0, 100%, 50%, 0.5)')).toBe(false)
+  })
+
+  it('isLabColorString validates LAB color strings', () => {
+    expect(isLabColorString('lab(0, 0, 0)')).toBe(true)
+    expect(isLabColorString('lab(100, 50, 75)')).toBe(true)
+    expect(isLabColorString('lch(100, 50, 75)')).toBe(false)
+    expect(isLabColorString('lab(100, 50, 75, 0.5)')).toBe(false)
+    expect(isLabColorString('lab(100, 50)')).toBe(false)
+  })
+
+  it('isLCHColorString validates LCH color strings', () => {
+    expect(isLchColorString('lch(0, 0, 0)')).toBe(true)
+    expect(isLchColorString('lch(100, 50, 75)')).toBe(true)
+    expect(isLchColorString('lab(100, 50, 75)')).toBe(false)
+    expect(isLchColorString('lch(100, 50, 75, 0.5)')).toBe(false)
+    expect(isLchColorString('lch(100, 50)')).toBe(false)
   })
 })
