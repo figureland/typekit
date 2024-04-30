@@ -9,7 +9,8 @@ await Bun.build({
     './src/merge.ts',
     './src/object.ts',
     './src/promise.ts',
-    './src/time.ts'
+    './src/time.ts',
+    './src/equals.ts'
   ],
   outdir: './dist',
   minify: false,

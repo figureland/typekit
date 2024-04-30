@@ -1,49 +1,54 @@
 {
   "name": "@figureland/typekit",
   "version": "0.0.17",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.js"
+      "require": "./dist/src/index.js",
+      "import": "./dist/src/index.js"
     },
     "./device": {
       "types": "./dist/device.d.ts",
-      "require": "./dist/device.js",
-      "import": "./dist/device.js"
+      "require": "./dist/src/device.js",
+      "import": "./dist/src/device.js"
     },
     "./guards": {
       "types": "./dist/guards.d.ts",
-      "require": "./dist/guards.js",
-      "import": "./dist/guards.js"
+      "require": "./dist/src/guards.js",
+      "import": "./dist/src/guards.js"
     },
     "./map": {
       "types": "./dist/map.d.ts",
-      "require": "./dist/map.js",
-      "import": "./dist/map.js"
+      "require": "./dist/src/map.js",
+      "import": "./dist/src/map.js"
     },
     "./merge": {
       "types": "./dist/merge.d.ts",
-      "require": "./dist/merge.js",
-      "import": "./dist/merge.js"
+      "require": "./dist/src/merge.js",
+      "import": "./dist/src/merge.js"
     },
     "./object": {
       "types": "./dist/object.d.ts",
-      "require": "./dist/object.js",
-      "import": "./dist/object.js"
+      "require": "./dist/src/object.js",
+      "import": "./dist/src/object.js"
     },
     "./promise": {
       "types": "./dist/promise.d.ts",
-      "require": "./dist/promise.js",
-      "import": "./dist/promise.js"
+      "require": "./dist/src/promise.js",
+      "import": "./dist/src/promise.js"
     },
     "./time": {
       "types": "./dist/time.d.ts",
-      "require": "./dist/time.js",
-      "import": "./dist/time.js"
+      "require": "./dist/src/time.js",
+      "import": "./dist/src/time.js"
+    },
+    "./equals": {
+      "types": "./dist/equals.d.ts",
+      "require": "./dist/src/equals.js",
+      "import": "./dist/src/equals.js"
     }
   },
   "description": "A tiny personal toolbox for Typescript",
