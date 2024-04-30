@@ -1,4 +1,16 @@
 
+## v0.0.19
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.18...v0.0.19)
+
+### 🏡 Chore
+
+- Updated package.json files ([56b90c0](https://github.com/figureland/typekit/commit/56b90c0))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.18
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.17...v0.0.18)
