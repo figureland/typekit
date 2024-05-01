@@ -7,7 +7,7 @@ export const keys = <T extends object>(obj: T) => Object.keys(obj) as (keyof T)[
 
 export const values = <T extends object>(obj: T) => Object.values(obj) as ValueOf<T>[]
 
-export const assignSame = <T extends object, U extends object[]>(obj: T, ...objs: U) =>
+export const assignSame = <T extends object, U extends (T | Partial<T>)[]>(obj: T, ...objs: U) =>
   Object.assign(obj, ...objs)
 
 export const is = <T>(a: T, b: T) => a === b || Object.is(a, b)

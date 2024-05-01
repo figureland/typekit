@@ -10,7 +10,8 @@ await Bun.build({
     './src/object.ts',
     './src/promise.ts',
     './src/time.ts',
-    './src/equals.ts'
+    './src/equals.ts',
+    './src/clone.ts'
   ],
   outdir: './dist',
   minify: false,

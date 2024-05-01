@@ -49,6 +49,11 @@
       "types": "./dist/equals.d.ts",
       "require": "./dist/src/equals.js",
       "import": "./dist/src/equals.js"
+    },
+    "./clone": {
+      "types": "./dist/clone.d.ts",
+      "require": "./dist/src/clone.js",
+      "import": "./dist/src/clone.js"
     }
   },
   "description": "A tiny personal toolbox for Typescript",
