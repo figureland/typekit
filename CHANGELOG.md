@@ -1,4 +1,23 @@
 
+## v0.0.21
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.20...v0.0.21)
+
+### 🚀 Enhancements
+
+- Added string color guards ([a5dad72](https://github.com/figureland/typekit/commit/a5dad72))
+- Added hsl color checker ([288754f](https://github.com/figureland/typekit/commit/288754f))
+- Updating tests and refining lab() and lch() guards ([62e0138](https://github.com/figureland/typekit/commit/62e0138))
+- Simplified merge and clone ([42f9d60](https://github.com/figureland/typekit/commit/42f9d60))
+
+### 🩹 Fixes
+
+- Unintended equality rejection for objects with keys in different orders ([bc311d3](https://github.com/figureland/typekit/commit/bc311d3))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.20
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.19...v0.0.20)
