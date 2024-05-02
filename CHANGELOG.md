@@ -1,4 +1,16 @@
 
+## v0.0.22
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.21...v0.0.22)
+
+### 🚀 Enhancements
+
+- Added touchscreen type check ([1385a01](https://github.com/figureland/typekit/commit/1385a01))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.21
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.20...v0.0.21)
