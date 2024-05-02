@@ -1,3 +1,5 @@
+/// <reference lib="dom" />
+
 const hasUserAgent = () => typeof navigator !== 'undefined' && navigator.userAgent
 
 export const isChrome = () => {
@@ -20,3 +22,5 @@ export const isMobile = (): boolean => {
     ? /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase())
     : false
 }
+
+export const isTouchscreen = () => hasUserAgent() && window.matchMedia('(pointer: coarse)').matches
