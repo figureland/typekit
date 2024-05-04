@@ -20,3 +20,17 @@ export type DistributiveOmit<T, K extends keyof any> = T extends any ? Omit<T, K
 export type WithRequired<T, K extends keyof T> = Partial<T> & Required<Pick<T, K>>
 
 export type Modify<T, R> = Omit<T, keyof R> & R
+
+export const omit = <Item extends object, K extends keyof Item>(
+  item: Item,
+  props: K[]
+): Omit<Item, K> =>
+  props.reduce(
+    (acc, key) => {
+      if (key in acc) {
+        delete acc[key]
+      }
+      return acc
+    },
+    { ...item }
+  )
