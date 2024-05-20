@@ -1,5 +1,6 @@
 /// <reference lib="dom" />
 
+const hasPlatform = () => typeof navigator !== 'undefined' && navigator.platform
 const hasUserAgent = () => typeof navigator !== 'undefined' && navigator.userAgent
 
 export const isChrome = () => {
@@ -21,6 +22,12 @@ export const isMobile = (): boolean => {
   return userAgent
     ? /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase())
     : false
+}
+
+export const isApple = () => {
+  if (!hasPlatform()) return false
+  const p = typeof navigator === 'object' ? navigator.platform : ''
+  return /Mac|iPod|iPhone|iPad/.test(p)
 }
 
 export const isTouchscreen = () => hasUserAgent() && window.matchMedia('(pointer: coarse)').matches
