@@ -1,4 +1,16 @@
 
+## v0.0.25
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.24...v0.0.25)
+
+### 🩹 Fixes
+
+- Typescript error on promise helper ([4bc2b70](https://github.com/figureland/typekit/commit/4bc2b70))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.24
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.23...v0.0.24)
