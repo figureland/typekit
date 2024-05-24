@@ -3,7 +3,7 @@ export const isFulfilled = <T>(
 ): result is PromiseFulfilledResult<T> => result.status === 'fulfilled'
 
 export const pickFulfilled = <T>(results: PromiseSettledResult<T>[]) => ({
-  rejected: results.filter((i) => i.status === 'rejected'),
+  rejected: results.filter((i): i is PromiseRejectedResult => i.status === 'rejected'),
   fulfilled: results.filter(isFulfilled).map((i) => i.value)
 })
 
