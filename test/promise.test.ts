@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'bun:test'
-import { isFulfilled, pickFulfilled, promiseSome } from '../src/promise'
+import { isFulfilled, parseSettled, settle } from '../src/promise'
 
 describe('Promise Utilities', () => {
   describe('isFulfilled', () => {
@@ -21,17 +21,17 @@ describe('Promise Utilities', () => {
         { status: 'rejected', reason: 'Error' },
         { status: 'fulfilled', value: 100 }
       ]
-      const picked = pickFulfilled(results)
+      const picked = parseSettled(results)
       expect(picked.fulfilled).toEqual([42, 100])
       expect(picked.rejected.length).toBe(1)
       expect(picked.rejected[0].status).toBe('rejected')
     })
   })
 
-  describe('promiseSome', () => {
+  describe('settle', () => {
     it('returns only fulfilled promises from a list of promises', async () => {
       const promises = [Promise.resolve(10), Promise.reject(new Error('Fail')), Promise.resolve(20)]
-      const result = await promiseSome(promises)
+      const result = await settle(promises)
       expect(result.fulfilled).toEqual([10, 20])
       expect(result.rejected.length).toBe(1)
     })
