@@ -1,4 +1,16 @@
 
+## v0.0.26
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.25...v0.0.26)
+
+### 🚀 Enhancements
+
+- Update API for promises ([1c412d2](https://github.com/figureland/typekit/commit/1c412d2))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.25
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.24...v0.0.25)
