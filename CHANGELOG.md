@@ -1,4 +1,20 @@
 
+## v0.0.27
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.26...v0.0.27)
+
+### 🚀 Enhancements
+
+- Added array equality ([f9c2d16](https://github.com/figureland/typekit/commit/f9c2d16))
+
+### ✅ Tests
+
+- Fixed typo ([1f61135](https://github.com/figureland/typekit/commit/1f61135))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.26
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.25...v0.0.26)
