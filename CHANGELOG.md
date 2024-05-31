@@ -1,4 +1,16 @@
 
+## v0.0.28
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.27...v0.0.28)
+
+### 🚀 Enhancements
+
+- Added new async methods ([a893bd4](https://github.com/figureland/typekit/commit/a893bd4))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.27
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.26...v0.0.27)
