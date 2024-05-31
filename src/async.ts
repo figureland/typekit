@@ -14,3 +14,11 @@ export const settle = async <T>(promises: Promise<T>[]) => {
   const results = await Promise.allSettled(promises)
   return parseSettled(results)
 }
+
+export async function collect<T>(asyncGenerator: AsyncGenerator<T>): Promise<T[]> {
+  const result: T[] = []
+  for await (const item of asyncGenerator) {
+    result.push(item)
+  }
+  return result
+}

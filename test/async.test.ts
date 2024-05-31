@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'bun:test'
-import { isFulfilled, parseSettled, settle } from '../src/promise'
+import { isFulfilled, parseSettled, settle } from '../src/async'
 
-describe('Promise Utilities', () => {
+describe('async utilities', () => {
   describe('isFulfilled', () => {
     it('returns true for a fulfilled promise result', () => {
       const result: PromiseSettledResult<number> = { status: 'fulfilled', value: 42 }

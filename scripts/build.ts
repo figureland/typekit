@@ -8,7 +8,7 @@ await Bun.build({
     './src/map.ts',
     './src/merge.ts',
     './src/object.ts',
-    './src/promise.ts',
+    './src/async.ts',
     './src/time.ts',
     './src/equals.ts',
     './src/clone.ts'

@@ -46,5 +46,5 @@ export {
 export { sortMapToArray, NiceMap } from './map'
 export { getTimeSince } from './time'
 export { type Merge, simpleMerge } from './merge'
-export { isFulfilled, isRejected, settle, parseSettled } from './promise'
+export { isFulfilled, isRejected, settle, parseSettled } from './async'
 export { shallowEquals, simpleEquals, type Equals, arraysEquals } from './equals'

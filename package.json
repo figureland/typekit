@@ -35,10 +35,10 @@
       "require": "./dist/src/object.js",
       "import": "./dist/src/object.js"
     },
-    "./promise": {
-      "types": "./dist/promise.d.ts",
-      "require": "./dist/src/promise.js",
-      "import": "./dist/src/promise.js"
+    "./async": {
+      "types": "./dist/async.d.ts",
+      "require": "./dist/src/async.js",
+      "import": "./dist/src/async.js"
     },
     "./time": {
       "types": "./dist/time.d.ts",
