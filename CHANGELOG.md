@@ -1,4 +1,16 @@
 
+## v0.0.29
+
+[compare changes](https://github.com/figureland/typekit/compare/v0.0.28...v0.0.29)
+
+### 🚀 Enhancements
+
+- Async generator guards ([dd51e31](https://github.com/figureland/typekit/commit/dd51e31))
+
+### ❤️ Contributors
+
+- Toby Milner-Gulland <toby@figure.land>
+
 ## v0.0.28
 
 [compare changes](https://github.com/figureland/typekit/compare/v0.0.27...v0.0.28)
