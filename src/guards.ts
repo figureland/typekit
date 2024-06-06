@@ -54,6 +54,12 @@ export const isFunction = (n: unknown): n is Function => typeof n === 'function'
 export const isAsyncFunction = (n: unknown): n is Function =>
   isFunction(n) && n.constructor.name === 'AsyncFunction'
 
+export const isAsyncGenerator = <T>(value: any): value is AsyncGenerator<T> =>
+  value && typeof value[Symbol.asyncIterator] === 'function'
+
+export const isAsyncGeneratorFunction = (n: unknown): n is Function =>
+  isFunction(n) && n.constructor.name === 'AsyncGeneratorFunction'
+
 export const isSet = <T>(n: unknown): n is Set<T> => n instanceof Set
 
 export const isValidURL = (n: unknown): n is string => {

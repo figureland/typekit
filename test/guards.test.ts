@@ -25,7 +25,9 @@ import {
   isRGBColorString,
   isHSLColorString,
   isLabColorString,
-  isLchColorString
+  isLchColorString,
+  isAsyncGenerator,
+  isAsyncGeneratorFunction
 } from '../src/guards'
 
 describe('Primitive Type Checkers', () => {
@@ -108,6 +110,49 @@ describe('Specialized Type and Functionality Checkers', () => {
     expect(isAsyncFunction(testAsync)).toBe(true)
     expect(isAsyncFunction(testSync)).toBe(false)
     expect(isAsyncFunction(() => {})).toBe(false)
+  })
+
+  it('isAsyncGenerator detects async generators', () => {
+    async function testAsync() {}
+    function testSync() {}
+
+    async function* testAsyncGenerator() {
+      yield 1
+      yield 2
+      yield 3
+    }
+    function* testSyncGenerator() {
+      yield 1
+      yield 2
+      yield 3
+    }
+    expect(isAsyncGenerator(testSync)).toBe(false)
+    expect(isAsyncGenerator(testAsync)).toBe(false)
+    expect(isAsyncGenerator(testAsyncGenerator())).toBe(true)
+    expect(isAsyncGenerator(testSyncGenerator())).toBe(false)
+    expect(isAsyncGenerator([1, 2, 3])).toBe(false)
+  })
+
+  it('isAsyncGeneratorFunction detects async generator functions', () => {
+    async function testAsync() {}
+    function testSync() {}
+    async function* testAsyncGenerator() {
+      yield 1
+      yield 2
+      yield 3
+    }
+
+    function* testSyncGenerator() {
+      yield 1
+      yield 2
+      yield 3
+    }
+
+    expect(isAsyncGenerator(testSync)).toBe(false)
+    expect(isAsyncGenerator(testAsync)).toBe(false)
+    expect(isAsyncGeneratorFunction(testAsyncGenerator)).toBe(true)
+    expect(isAsyncGeneratorFunction(testSyncGenerator)).toBe(false)
+    expect(isAsyncGeneratorFunction([1, 2, 3])).toBe(false)
   })
 
   it('isSet checks for Set instances', () => {

@@ -46,6 +46,7 @@ export const arraysEquals: Equals<any[]> = (arr1, arr2) => {
   if (!isArray(arr1) || !isArray(arr2)) {
     return false
   }
+
   if (arr1.length !== arr2.length) {
     return false
   }
