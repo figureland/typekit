@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This codebase is deprecated, and has been moved to [@figureland/kit](https://github.com/figureland/kit/).
+
 A collection of Typescript utilities.
 
 ## Scripts
